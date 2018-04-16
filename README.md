@@ -6,6 +6,7 @@
 
 >题目出现后，在你要答题的页面点击F12（不是本页面），点击Console或者控制台，复制输入下面的代码，点击回车或者运行，“自动答题”。
 >由于答题系统可能更新，请每次答题前访问本页面获取最新的代码，确保答案无误。
+
 ```
 let answers = [];
 let answerIndex = 0;
@@ -39,21 +40,19 @@ msgDiv.css({
     "color": "#0ef"
 });
 msgDiv.fadeIn();
-
 let index = 0;
 let elemLi = $(".w_charu li");
 let length = elemLi.length;
-
 function oneti() {
     if (index < length) {
         var e = elemLi[index];
         index++;
         getAns(e);
+    } else {
+        countX();
     }
 }
-
 let w_btn_tab_down = $(".w_btn_tab_down");
-
 function getAns(e) {
     let thisAnswer = answers[answerIndex++];
     let ans = thisAnswer.split(',');
@@ -62,18 +61,15 @@ function getAns(e) {
     });
     gzzrClick();
 }
-
 function gzzrClick() {
     clientXArr.push(gzzrRdm(540, 620));
     clientXArrY.push(gzzrRdm(530, 550));
     w_btn_tab_down.click();
     oneti();
 }
-
 function gzzrRdm(min, max) {
     return Math.floor((Math.random() * (max - min + 1) + min));
 }
-
 function countX() {
     var obj = {},
         arr = clientXArr,
