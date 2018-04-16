@@ -92,3 +92,8 @@ function countX() {
     repeatX = maxArr.length > 0 ? maxArr[maxArr.length - 1] : 0;
 }
 ```
+
+**操作说明：**
+
+ ![image](https://github.com/shygzr/dtjs/s1.png)
+
