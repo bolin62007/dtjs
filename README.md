@@ -95,5 +95,5 @@ function countX() {
 
 **操作说明：**
 
- ![image](https://github.com/shygzr/dtjs/s1.png)
+ ![image](https://github.com/shygzr/dtjs/blob/master/s1.png)
 
