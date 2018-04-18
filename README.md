@@ -61,7 +61,6 @@ function getAns(e) {
     let ans = thisAnswer.split(',');
     ans.forEach(a => {
         $(e).find("input[value=" + a + "]").parent().css("border", "2px solid green");
-        console.log($(e).find("input[value=" + a + "]").parent());
     });
     oneti();
 }
