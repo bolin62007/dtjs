@@ -1,4 +1,4 @@
-# 灯塔在线自动答题
+# dt在线自动答题
 
 本JS代码仅供交流学习，请勿用作非法用途。
 
@@ -150,7 +150,4 @@ function countX() {
 }
 ```
 
-**操作说明：**
-
- ![image](https://github.com/shygzr/dtjs/blob/master/s1.png)
 
