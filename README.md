@@ -23,7 +23,6 @@ $.ajax({
     dataType: "json",
     success: function(res) {
         let data = res.data.dateList;
-        var str = '';
         if (res.code == 200 && data.length > 0) {
             for (var i = 0; i < data.length; i++) {
                 answers.push(data[i].answer);
@@ -50,7 +49,7 @@ let length = elemLi.length;
 
 function oneti() {
     if (index < length) {
-        var e = elemLi[index];
+        let e = elemLi[index];
         index++;
         getAns(e);
     }
